@@ -2,6 +2,12 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import joblib
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import LabelBinarizer
+import catboost
+from catboost import CatBoostClassifier
+
 
 # --- Load models and expected features ---
 rf_model = joblib.load("random_forest_model_H.pkl")
